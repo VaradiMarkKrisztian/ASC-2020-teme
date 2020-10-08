@@ -21,6 +21,7 @@ namespace Moore_s_Law
             Console.WriteLine($"viteza puterii de calcul {n} va fi obtinuta in {luna} luni");
             Console.WriteLine($"adica aproximativ in {an = (float)luna / 12} ani");
             Console.ReadKey();
+            //
         }
     }
 }
