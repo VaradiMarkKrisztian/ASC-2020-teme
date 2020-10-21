@@ -11,10 +11,12 @@ namespace tema2_conversii
     {
         static void Main(string[] args)
         {
+            //add cod de verificare pentru baza si nr
             Console.WriteLine("Introduceti un numar");
             string line = Console.ReadLine();
-            int numar;
-            numar= int.Parse(line);
+            
+           uint numar= (uint)int.Parse(line);
+            uint semn = numar;
 
             Console.WriteLine("introduceti o baza de la 2 la 16");
             int baza;
@@ -29,16 +31,19 @@ namespace tema2_conversii
 
             int cat=0, rest=0;
             string result = "";
+            
             Stack<int> stiva = new Stack<int>();
-            while(numar>0)
+            while(numar!=0)
             {
-                cat = numar / baza;
-                rest = numar % baza;
+                cat = (int)(numar / baza);
+                rest = (int)(numar % baza);
                 stiva.Push(rest);
                 // sau in loc de stiva folosim doar Console.Write(rest); pentru partea aceasta
-                numar = numar / baza;
+                numar = (uint)(numar / baza);
                 
             }
+
+           
             string[] litere = { "A", "B", "C", "D", "E", "F" };
             while(stiva.Count>0)
             {
@@ -53,8 +58,26 @@ namespace tema2_conversii
                     result = result + cifra;
                 }
             }
-            Console.WriteLine(result);
+
+            if (baza == 2)
+            {
+                if (semn < 0)
+                {
+                    Console.WriteLine($"(1){result}"); //?
+                }
+                else if (semn > 0)
+                {
+                    Console.WriteLine($"(0){result}");
+                }
+                
+            }
+            else
+            {
+                Console.WriteLine(result);
+            }
+           
             Console.ReadKey();
+
         }
     }
 }
