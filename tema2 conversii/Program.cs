@@ -11,7 +11,8 @@ namespace tema2_conversii
     {
         static void Main(string[] args)
         {
-            //add cod de verificare pentru baza si nr
+
+           
             Console.WriteLine("Introduceti un numar:");
             string line = Console.ReadLine();
             
@@ -69,7 +70,6 @@ namespace tema2_conversii
                     cat = (int)(numar / baza);
                     rest = (int)(numar % baza);
                     stiva.Push(rest);
-                    // sau in loc de stiva folosim doar Console.Write(rest); pentru partea aceasta
                     numar = (uint)(numar / baza);
                 }
 
@@ -88,7 +88,7 @@ namespace tema2_conversii
                     }
                 }
                 Console.WriteLine($"Rezultatul este: {result}");
-            Console.WriteLine("Puteti sa inchideti programul.");
+                Console.WriteLine("Puteti sa inchideti programul.");
                 Console.ReadKey();
             
         }
