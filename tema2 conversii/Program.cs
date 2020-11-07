@@ -11,9 +11,7 @@ namespace tema2_conversii
     {
         static void Main(string[] args)
         {
-
-           
-            Console.WriteLine("Introduceti un numar:");
+            Console.WriteLine("Introduceti un numar intreg pozitiv sau negativ:");
             string line = Console.ReadLine();
             
             uint numar= (uint)int.Parse(line);
@@ -94,3 +92,9 @@ namespace tema2_conversii
         }
     }
 }
+// (unit)semn=numar;
+//if (baza==2)
+//{
+//  if(semn>0) console.writeline($"(0){result}");
+//else console.writeline($"(1){result}");
+//}
