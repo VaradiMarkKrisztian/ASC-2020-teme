@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30711.63
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aparat de vanzari tema4", "Aparat de vanzari tema4.csproj", "{05AE638C-50D6-461B-822C-C2C5361D4364}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{05AE638C-50D6-461B-822C-C2C5361D4364}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05AE638C-50D6-461B-822C-C2C5361D4364}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05AE638C-50D6-461B-822C-C2C5361D4364}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05AE638C-50D6-461B-822C-C2C5361D4364}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {40A2958F-3325-439D-A53D-BE27FE7EFD47}
+	EndGlobalSection
+EndGlobal
